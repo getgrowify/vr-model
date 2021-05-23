@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: E9D3FF">
+      <a-assets>
+        <img id="soil" src="https://cdn.glitch.com/16392d04-59b8-4c24-9844-952cb37934eb%2FCity_floor.jpg?v=1621729814590" />
+        <img
+          id="background"
+          src="https://cdn.glitch.com/16392d04-59b8-4c24-9844-952cb37934eb%2Fandreas-brucker-g5Uh7nP60FA-unsplash.jpg?v"=1621729912688=1621729854100>
+        
+  
+        
+        <a-asset-item
+            id="tree"
+            src="https://cdn.glitch.com/16392d04-59b8-4c24-9844-952cb37934eb%2Factual_model_1.gltf?v=1621729539811"></a-asset-item>
+                      
+      </a-assets>
+
+      <a-sky src="#background"></a-sky>
+      <a-plane
+        src="#soil"
+        rotation="-90 0 0"
+        width="70"
+        height="70"
+        repeat="14 14"
+      ></a-plane>
+      
+      <a-box
+        src="#soil"
+        position="-0 0 -35"
+        rotation="0 0 0"
+        scale="70 1 1"></a-box>
+      <a-box
+        src="#soil"
+        position="-35 0 -0.02"
+        rotation="0 90 0"
+        scale="70 1 1"></a-box>
+      
+      
+
+      <a-gltf-model
+        src="#tree"
+        position="0 0 -2"></a-gltf-model>
+    </a-scene>
+  </body>
+</html>
