@@ -1,1 +1,4 @@
-# vr-model
+# Vr model
+
+
+Made using A-Frame
